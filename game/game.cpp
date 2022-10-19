@@ -2,7 +2,7 @@
 #include <string>
 #include <time.h>
 
-#include "gameBoard.hpp"
+#include "../Snake/gameBoard.hpp"
 
 #include "../define.h"
 

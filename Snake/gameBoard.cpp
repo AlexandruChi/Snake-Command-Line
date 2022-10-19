@@ -3,7 +3,7 @@
 
 #include "gameBoard.hpp"
 
-#include "define.h"
+#include "../define.h"
 
 bool gameBoard::initBoard() {
     board = new char*[y];

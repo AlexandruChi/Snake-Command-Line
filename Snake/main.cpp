@@ -5,7 +5,7 @@
 #include "gameBoard.hpp"
 #include "../game/game.hpp"
 
-#include "define.h"
+#include "../define.h"
 
 using namespace std;
 
