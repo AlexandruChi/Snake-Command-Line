@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		F506133028FF429B0056F4C1 /* gameBoard.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F506132E28FF429B0056F4C1 /* gameBoard.cpp */; };
+		F506133528FF437D0056F4C1 /* game.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F506133328FF437D0056F4C1 /* game.cpp */; };
 		F57BDC3E28FEF6E50098D43F /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F57BDC3D28FEF6E50098D43F /* main.cpp */; };
 /* End PBXBuildFile section */
 
@@ -23,8 +25,13 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		F506132E28FF429B0056F4C1 /* gameBoard.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = gameBoard.cpp; sourceTree = "<group>"; };
+		F506132F28FF429B0056F4C1 /* gameBoard.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = gameBoard.hpp; sourceTree = "<group>"; };
+		F506133328FF437D0056F4C1 /* game.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = game.cpp; sourceTree = "<group>"; };
+		F506133428FF437D0056F4C1 /* game.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = game.hpp; sourceTree = "<group>"; };
 		F57BDC3A28FEF6E50098D43F /* Snake */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = Snake; sourceTree = BUILT_PRODUCTS_DIR; };
 		F57BDC3D28FEF6E50098D43F /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
+		F57BDC4E28FF03A40098D43F /* define.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = define.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -38,9 +45,20 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		F506133228FF435D0056F4C1 /* game */ = {
+			isa = PBXGroup;
+			children = (
+				F506133328FF437D0056F4C1 /* game.cpp */,
+				F506133428FF437D0056F4C1 /* game.hpp */,
+			);
+			path = game;
+			sourceTree = "<group>";
+		};
 		F57BDC3128FEF6E50098D43F = {
 			isa = PBXGroup;
 			children = (
+				F57BDC4E28FF03A40098D43F /* define.h */,
+				F506133228FF435D0056F4C1 /* game */,
 				F57BDC3C28FEF6E50098D43F /* Snake */,
 				F57BDC3B28FEF6E50098D43F /* Products */,
 			);
@@ -58,6 +76,8 @@
 			isa = PBXGroup;
 			children = (
 				F57BDC3D28FEF6E50098D43F /* main.cpp */,
+				F506132E28FF429B0056F4C1 /* gameBoard.cpp */,
+				F506132F28FF429B0056F4C1 /* gameBoard.hpp */,
 			);
 			path = Snake;
 			sourceTree = "<group>";
@@ -119,7 +139,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F506133028FF429B0056F4C1 /* gameBoard.cpp in Sources */,
 				F57BDC3E28FEF6E50098D43F /* main.cpp in Sources */,
+				F506133528FF437D0056F4C1 /* game.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -239,6 +261,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
+				OTHER_LDFLAGS = "-lncurses";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Debug;
@@ -247,6 +270,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
+				OTHER_LDFLAGS = "-lncurses";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Release;
