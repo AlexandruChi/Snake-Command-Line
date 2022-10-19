@@ -32,6 +32,7 @@
 		F57BDC3A28FEF6E50098D43F /* Snake */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = Snake; sourceTree = BUILT_PRODUCTS_DIR; };
 		F57BDC3D28FEF6E50098D43F /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
 		F57BDC4E28FF03A40098D43F /* define.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = define.h; sourceTree = "<group>"; };
+		F591292529005ADA006BD692 /* makefile */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.make; path = makefile; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -57,6 +58,7 @@
 		F57BDC3128FEF6E50098D43F = {
 			isa = PBXGroup;
 			children = (
+				F591292429005AB5006BD692 /* make */,
 				F57BDC4E28FF03A40098D43F /* define.h */,
 				F506133228FF435D0056F4C1 /* game */,
 				F57BDC3C28FEF6E50098D43F /* Snake */,
@@ -80,6 +82,14 @@
 				F506132F28FF429B0056F4C1 /* gameBoard.hpp */,
 			);
 			path = Snake;
+			sourceTree = "<group>";
+		};
+		F591292429005AB5006BD692 /* make */ = {
+			isa = PBXGroup;
+			children = (
+				F591292529005ADA006BD692 /* makefile */,
+			);
+			path = make;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
