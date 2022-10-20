@@ -51,6 +51,7 @@ int main(void) {
     board.snake.y = board.y / 2;
     
     runGame(board);
+    board.deleteBoard();
     
     clear();
     

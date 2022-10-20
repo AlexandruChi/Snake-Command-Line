@@ -10,6 +10,7 @@ struct gameBoard {
     unsigned long long int **moveMap;
     
     bool initBoard();
+    void deleteBoard();
     
     struct {
         unsigned int x, y, size = 1, minSize,  xtail, ytail;

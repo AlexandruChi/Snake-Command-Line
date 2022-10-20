@@ -58,6 +58,15 @@ bool gameBoard::initBoard() {
     return true;
 }
 
+void gameBoard::deleteBoard() {
+    for (int i = 0; i < y; i++) {
+        delete[] board[i];
+        delete[] moveMap[i];
+    }
+    delete[] board;
+    delete[] moveMap;
+}
+
 bool gameBoard::moveRight() {
     int newX = snake.x + 1, newY = snake.y;
     
